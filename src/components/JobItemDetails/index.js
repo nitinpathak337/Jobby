@@ -91,7 +91,7 @@ class JobItemDetails extends Component {
     switch (apiStatusJobSpecific) {
       case apiStatusConstants.inProgress:
         return (
-          <div className="loader-container-jobs" testid="loader">
+          <div className="loader-container-jobs">
             <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
           </div>
         )

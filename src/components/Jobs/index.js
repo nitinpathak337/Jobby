@@ -42,7 +42,7 @@ class Jobs extends Component {
     switch (apiStatusProfile) {
       case apiStatusConstants.inProgress:
         return (
-          <div className="loader-container" testid="loader">
+          <div className="loader-container">
             <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
           </div>
         )
@@ -217,12 +217,7 @@ class Jobs extends Component {
             placeholder="Search"
             onChange={this.onSearchInput}
           />
-          <button
-            type="button"
-            className="search-icon"
-            onClick={this.onSearch}
-            testid="searchButton"
-          >
+          <button type="button" className="search-icon" onClick={this.onSearch}>
             <BsSearch fill="white" />
           </button>
         </div>
@@ -240,12 +235,7 @@ class Jobs extends Component {
             placeholder="Search"
             onChange={this.onSearchInput}
           />
-          <button
-            type="button"
-            className="search-icon"
-            onClick={this.onSearch}
-            testid="searchButton"
-          >
+          <button type="button" className="search-icon" onClick={this.onSearch}>
             <BsSearch fill="white" />
           </button>
         </div>
@@ -272,7 +262,7 @@ class Jobs extends Component {
     switch (apiStatusJobs) {
       case apiStatusConstants.inProgress:
         return (
-          <div className="loader-container-jobs" testid="loader">
+          <div className="loader-container-jobs">
             <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
           </div>
         )
